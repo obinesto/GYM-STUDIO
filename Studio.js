@@ -235,19 +235,17 @@ function handleSignUp(){
 
 // logic toggle bars
 document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.navsection-3').style.display = 'none'
+    const navThree = document.querySelector('.navsection-3')
     const barsIcons = document.querySelectorAll('.fa-bars');
     barsIcons.forEach(icon => {
         icon.addEventListener('click', () => {
-            icon.classList.toggle('fa-xmark'); 
+            navThree.style.display = 'flex'
+            if(navThree){
+                document.querySelector('.fa-xmark').addEventListener('click', () => {
+                navThree.style.display = 'none'
+            })
+            }
         });
     });
-});
-
-// logic for background video
-document.addEventListener('DOMContentLoaded', function() {
-    var video = document.querySelector('video');
-    if (video) {
-        video.muted = true;
-        video.play();
-    }
 });

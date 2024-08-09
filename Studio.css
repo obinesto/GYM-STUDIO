@@ -146,6 +146,18 @@ cursor: pointer;
     cursor: pointer;
 }
 
+/* 3rd header */
+.navsection-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+}
 
 /* beginning of section one */
 .section-1{
