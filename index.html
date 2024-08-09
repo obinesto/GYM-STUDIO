@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/Images/square_logo_trainingstudio.png" type="jpg">
+    <link rel="stylesheet" href="Studio.css">
+    <link rel="stylesheet" href="GoogleFonts.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/50f76a3883.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <title>Training Studio</title>
+</head>
+<body>
+    <div class="container">
+
+        <header class="header-1">
+            <span class="header-1-span">
+                <div onclick="h1Click()" class="header-1-h1">
+                    <h1 style="color: #fff;">Training</h1>
+                    <h1 style="color: #b41be7;">Studio</h1>
+                </div>
+                <nav class="navsection-1">
+                        <a class="anchor-2" data-target="home" style="color: #b41be7;">Home</a>
+                        <a class="anchor-2" data-target="about">About</a>
+                        <a class="anchor-2" data-target="classes">Classes</a>
+                        <a class="anchor-2" data-target="schedules">Schedules</a>
+                        <a class="anchor-2" data-target="contact">Contact</a>
+                    <button class="btn1" onclick="handleSignUp()">
+                        sign up
+                    </button>
+                    <div class="bars-icon">
+                        <i class="fa-solid fa-bars fa-xl" style="color: #b41be7;"></i>
+                    </div>
+                </nav>
+            </span>
+        </header>
+
+        <header class="header-2">
+            <span class="header-2-span">
+                <div onclick="h1Click()" class="header-2-h1">
+                    <h1>Training</h1>
+                    <h1 style="color: #b41be7;">Studio</h1>
+                </div>
+                <nav class="navsection-2">
+                        <a class="aheader-2 anchor-2" data-target="home">Home</a>
+                        <a class="aheader-2 anchor-2" data-target="about" style="color: #b41be7;">About</a>
+                        <a class="aheader-2 anchor-2" data-target="classes">Classes</a>
+                        <a class="aheader-2 anchor-2" data-target="schedules">Schedules</a>
+                        <a class="aheader-2 anchor-2" data-target="contact">Contact</a>
+                    <button class="btn2" onclick="handleSignUp()">
+                        sign up
+                    </button>
+                    <div class="bars-icon">
+                        <i class="fa-solid fa-bars fa-xl" style="color: #b41be7;"></i>
+                    </div>
+                </nav>
+            </span>
+        </header>
+
+        <!-- beginning of section one -->
+        <section class="section-1" id="home">
+
+        <div class="overlay-1a">
+            <div class="overlay-1b">
+            <video src="Assets/Videos/148201-793717934.mp4" autoplay loop muted></video>
+            </div>
+            <span class="text-overlay">
+            <span id="span1">work harder, get fitter</span>
+            <span id="span2">easy with our <span style="color: #b41be7;">gym</span></span>
+            <a class="anchor-2" data-target="about"><button>become a member</button></a>
+            </span>
+        </div>
+        </section>
+        <!-- end of section one -->
+
+        <!-- begining of section two -->
+        <section class="section-2" id="about">
+
+            <div class="overlay-2a">
+                <div class="text-overlay-2">
+                    <span>
+                        <p id="span3">choose <span style="color: #b41be7;">program</span></p>
+                        <i><img src="Assets/Images/line-dec.png" alt="#"></i>
+                        <p id="span4">Each of these programs have been carefully selected to match your needs<br><span>and provide desireable results</span></p>
+                    </span>
+                </div>
+
+                <div class="program">
+                    <div class="program-sideA">
+                        <div class="program-sideA-box">
+                            <img src="Assets/Images/features-first-icon.png" alt="">
+                            <div class="text-box">
+                            <p id="line-1">Basic Fitness</p>
+                            <p id="line-2">Get fit, feel fit, and stay fit. maintaining a good level of <br> physical fitness is important.</p>
+                            <a class="anchor-2" data-target="home" style="color: #b41be7;">DISCOVER MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="program-sideA-box">
+                            <img src="Assets/Images/features-first-icon.png" alt="">
+                            <div class="text-box">
+                            <p id="line-1">New Gym Training</p>
+                            <p id="line-2">It covers the gym's etiquette, how to use machines and <br> access each area of the Gym.</p>
+                            <a class="anchor-2" data-target="home" style="color: #b41be7;">DISCOVER MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="program-sideA-box">
+                            <img src="Assets/Images/features-first-icon.png" alt="">
+                            <div class="text-box">
+                            <p id="line-1">Basic Muscle Course</p>
+                            <p id="line-2">Focuses on lifting a set of weight in a prescribed position <br> and measuring the muscular strength.</p>
+                            <a class="anchor-2" data-target="home" style="color: #b41be7;">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="program-sideB">
+                        <div class="program-sideB-box">
+                            <img src="Assets/Images/features-first-icon.png" alt="">
+                            <div class="text-box">
+                            <p id="line-1">Advanced Muscle Course</p>
+                            <p id="line-2">Focuses on muscular endurance; which is the ability of a <br> muscle to continue exerting force without tiring.</p>
+                            <a class="anchor-2" data-target="home" style="color: #b41be7;">DISCOVER MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="program-sideB-box">
+                            <img src="Assets/Images/features-first-icon.png" alt="">
+                            <div class="text-box">
+                            <p id="line-1">Yoga Training</p>
+                            <p id="line-2">Flexibility improves the ability to link movements together <br> smoothly and can help prevent injuries.</p>
+                            <a class="anchor-2" data-target="home" style="color: #b41be7;">DISCOVER MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="program-sideB-box">
+                            <img src="Assets/Images/features-first-icon.png" alt="">
+                            <div class="text-box">
+                            <p id="line-1">Body Building Course</p>
+                            <p id="line-2">This is your complete guide to Body Building. From bulking <br> up to cutting down, to workout plans and nutrition guides.</p>
+                            <a class="anchor-2" data-target="home" style="color: #b41be7;">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay-2b">
+                <img src="Assets/Images/cta-bg.jpg" alt="" srcset="">
+                <div class="text-overlay-3">
+                <h1>DON'T <span style="color: #b41be7;">THINK</span>, BEGIN <span style="color: #b41be7;">TODAY</span>!</h1>
+                <p>The training studio is designed to give everyone the tools they need to reach their dream fitness goals.<br>
+                We can't wait to have you!</p>
+                <a class="anchor-2" data-target="classes"><button>become a member</button></a>
+                </div>
+            </div>
+        </section>
+       <!-- end of section 2 -->
+
+
+       <!-- begining of section 3 -->
+        <section class="section-3" id="classes">
+            <div class="text-overlay-4">
+                    <h1>OUR <span style="color: #b41be7;">CLASSES</span></h1>
+                    <img src="Assets/Images/line-dec.png" alt="">
+                    <p>Here are our various Training classes you can choose from</p>
+            </div>
+
+            <div class="overlay-3a">
+                <div class="class-sideA" id="class-sideA">
+                    <div id="firstClass">
+                        <img src="Assets/Images/tabs-first-icon.png" alt="">
+                        <h1>First Training Class</h1>
+                    </div>
+                    <div id="secondClass">
+                        <img src="Assets/Images/tabs-first-icon.png" alt="">
+                        <h1>Second Training Class</h1>
+                    </div>
+                    <div id="thirdClass">
+                        <img src="Assets/Images/tabs-first-icon.png" alt="">
+                        <h1>Third Training Class</h1>
+                    </div>
+                    <div id="fourthClass">
+                        <img src="Assets/Images/tabs-first-icon.png" alt="">
+                        <h1>Fourth Training Class</h1>
+                    </div>
+                </div>
+
+                <div class="schedules-view">
+                    <a class="anchor-2" id="s-v" data-target="schedules"><h1>View All Schedules</h1></a>
+                </div>
+    
+                <div class="class-sideB">
+                    <div class="training-1-view"></div>
+                </div>
+            </div>
+
+        </section>
+        <!-- end of section 3 -->
+
+
+        <!-- begining of section 4 -->
+         <section class="section-4" id="schedules">
+            <img src="Assets/Images/schedule-bg.jpg" alt="" class="bg-img">
+            <div class="section-4-content">
+                <h3>
+                    CLASS <span style="color: #b41be7;">SCHEDULE</span>
+                </h3>
+                <img src="Assets/Images/line-dec.png" alt="">
+                <h5>
+                    This class schedule typically includes all of the workout routines that each member will be taught weekly.
+                </h5>
+                <div class="training-days">
+                    <p id="mon">Monday</p>/ <p id="tue">Tuesday</p>/ <p id="wed">Wednesday</p>/ <p id="thur">Thursday</p>/ <p id="fri">Friday</p>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>
+                                Fitness Class
+                            </th>
+                            <td id="td-1"></td>
+                            <td id="td-2"></td>
+                            <th>William G. Stewart</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Muscle Training
+                            </th>
+                            <td id="td-3"></td>
+                            <td id="td-4"></td>
+                            <th>Paul D. Newman</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Body Building
+                            </th>
+                            <td id="td-5"></td>
+                            <td id="td-6"></td>
+                            <th>Boyd C. Harris</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Yoga Training Class
+                            </th>
+                            <td id="td-7"></td>
+                            <td id="td-8"></td>
+                            <th>Hector T. Daigle</th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Advanced Training
+                            </th>
+                            <td id="td-9"></td>
+                            <td id="td-10"></td>
+                            <th>Bret D. Bowers</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+         </section>
+         <!-- end of section 4 -->
+        
+         <!-- begining of section 5 -->
+         <section class="section-5">
+            <div class="section-5-content">
+                <h3>
+                    EXPERT <span style="color: #b41be7;">TRAINERS</span>
+                </h3>
+                <img src="Assets/Images/line-dec.png" alt="">
+                <h5 style="color: #000000ab;">
+                    Bringing you closer to our expert trainers and instructors.
+                </h5>
+                <div class=" section-5-content-img-container">
+                    <div class="img-box" id="box-1">
+                        <img src="Assets/Images/first-trainer.jpg" alt="">
+                        <h5 style="color: #b41be7;">Strength Trainer</h5>
+                        <h4>Bret D. Bowers</h4>
+                        <p>
+                            Delivers high-energy trainings using the latest techniques in exercise science, cardio programs and strength training.
+                        </p>
+                        <div class="icon-flex" id="icon-flex-1">
+                            <a href="https://facebook.com/McCprian" target="_blank">
+                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                            </a>
+                            <a href="https://x.com/Mc_Cprian02" target="_blank">
+                                <i class="fa-brands fa-twitter fa-xl"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/cyprian-obi-6306b4183" target="_blank">
+                                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                            </a>
+                            <a href="https://github.com/obinesto" target="_blank">
+                                <i class="fa-brands fa-github fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img-box" id="box-2">
+                        <img src="Assets/Images/second-trainer.jpg" alt="">
+                        <h5 style="color: #b41be7;">Muscle Trainer</h5>
+                        <h4>Hector T. Daigle</h4>
+                        <p>
+                            Ensures effective workouts, identifying different muscle groups and explaining appropriate methods to strengthen specific muscles.
+                        </p>
+                        <div class="icon-flex" id="icon-flex-2">
+                            <a href="https://facebook.com/McCprian" target="_blank">
+                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                            </a>
+                            <a href="https://x.com/Mc_Cprian02" target="_blank">
+                                <i class="fa-brands fa-twitter fa-xl"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/cyprian-obi-6306b4183" target="_blank">
+                                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                            </a>
+                            <a href="https://github.com/obinesto" target="_blank">
+                                <i class="fa-brands fa-github fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="img-box" id="box-3">
+                        <img src="Assets/Images/third-trainer.jpg" alt="">
+                        <h5 style="color: #b41be7;">Power Trainer</h5>
+                        <h4>Paul D. Newman</h4>
+                        <p>
+                            Leads kinesthetic group exercise classes, design classes to match the skill and learning level of all participants.
+                        </p>
+                        <div class="icon-flex" id="icon-flex-3">
+                            <a href="https://facebook.com/McCprian" target="_blank">
+                                <i class="fa-brands fa-facebook-f fa-xl"></i>
+                            </a>
+                            <a href="https://x.com/Mc_Cprian02" target="_blank">
+                                <i class="fa-brands fa-twitter fa-xl"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/cyprian-obi-6306b4183" target="_blank">
+                                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                            </a>
+                            <a href="https://github.com/obinesto" target="_blank">
+                                <i class="fa-brands fa-github fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+         </section>
+        <!-- end of section 5 -->
+
+        <!-- begining of section 6 -->
+         <section class="section-6">
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+            
+            <div class="contact-us">
+                <img src="Assets/Images/contact-bg.jpg" alt="">
+                <div class="form-container">
+                    <form action="" method="post" id="contact">
+                        <div class="input-flex">
+                            <input type="text" placeholder="Your Name*" required>
+                            <input type="email" placeholder="Your Email*" required>
+                        </div>
+                        <div class="input-block">
+                            <input type="text" placeholder="Subject" id="Subject" required>
+                            <textarea name="" id="text-area" placeholder="Message" required></textarea>
+                        </div>
+                        <input type="button" value="SEND MESSAGE" id="send-message">
+                    </form>
+                </div>
+            </div>
+         </section>
+        <!-- end of section 6 -->
+
+        <!-- copyright -->
+        <div class="copyright">
+            <h5>©2024 - Training Studio</h5>
+        </div>
+
+    </div>
+
+    <script src="Studio.js"></script>
+</body>
+</html>
