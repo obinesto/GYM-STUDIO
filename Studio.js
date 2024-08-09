@@ -247,6 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', function() {
     var video = document.querySelector('video');
     if (video) {
+        video.muted = true;
         video.play();
     }
 });
