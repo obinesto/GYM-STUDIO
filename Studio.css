@@ -173,6 +173,7 @@ cursor: pointer;
     position: absolute;
     bottom: 45%;
     left: 23%;
+    width: -moz-fit-content;
     width: fit-content;
     text-align: center;
 }
@@ -292,6 +293,7 @@ a{
 }
 
 .text-overlay-3{
+    width: -moz-fit-content;
     width: fit-content;
     display: flex;
     flex-direction: column;
