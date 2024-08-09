@@ -233,7 +233,7 @@ function handleSignUp(){
     window.location.href = 'sign_up.html'
 }
 
-// toggle bars
+// logic toggle bars
 document.addEventListener('DOMContentLoaded', () => {
     const barsIcons = document.querySelectorAll('.fa-bars');
     barsIcons.forEach(icon => {
@@ -241,4 +241,12 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.toggle('fa-xmark'); 
         });
     });
+});
+
+// logic for background video
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('video');
+    if (video) {
+        video.play();
+    }
 });
